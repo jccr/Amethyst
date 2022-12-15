@@ -241,6 +241,10 @@ extension AXWindow: WindowType {
             return false
         }
 
+        guard self.frame().size.height > 10.0 else {
+            return false
+        }
+
         return true
     }
 
